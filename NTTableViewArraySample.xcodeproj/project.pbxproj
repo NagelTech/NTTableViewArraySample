@@ -13,6 +13,9 @@
 		F016A04E15D5860100AF85EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F016A04C15D5860100AF85EF /* InfoPlist.strings */; };
 		F016A05015D5860100AF85EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F016A04F15D5860100AF85EF /* main.m */; };
 		F016A05415D5860100AF85EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F016A05315D5860100AF85EF /* AppDelegate.m */; };
+		F016A05E15D586B700AF85EF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F016A05C15D586B700AF85EF /* MainViewController.m */; };
+		F016A05F15D586B700AF85EF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F016A05D15D586B700AF85EF /* MainViewController.xib */; };
+		F044CF2115D875F1005D6C7E /* NTTableViewArrayUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F044CF1E15D875F1005D6C7E /* NTTableViewArrayUpdateManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		F016A05115D5860100AF85EF /* NTTableViewArraySample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTTableViewArraySample-Prefix.pch"; sourceTree = "<group>"; };
 		F016A05215D5860100AF85EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F016A05315D5860100AF85EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F016A05B15D586B700AF85EF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F016A05C15D586B700AF85EF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F016A05D15D586B700AF85EF /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F044CF1D15D875F1005D6C7E /* NTTableViewArrayUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTableViewArrayUpdateManager.h; sourceTree = "<group>"; };
+		F044CF1E15D875F1005D6C7E /* NTTableViewArrayUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTableViewArrayUpdateManager.m; sourceTree = "<group>"; };
+		F044CF1F15D875F1005D6C7E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,8 @@
 		F016A04915D5860100AF85EF /* NTTableViewArraySample */ = {
 			isa = PBXGroup;
 			children = (
+				F044CF1B15D875F1005D6C7E /* NTTableViewArrayUpdateManager */,
+				F016A05A15D5863F00AF85EF /* ViewControllers */,
 				F016A05215D5860100AF85EF /* AppDelegate.h */,
 				F016A05315D5860100AF85EF /* AppDelegate.m */,
 				F016A04A15D5860100AF85EF /* Supporting Files */,
@@ -88,6 +99,26 @@
 				F016A05115D5860100AF85EF /* NTTableViewArraySample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F016A05A15D5863F00AF85EF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F016A05B15D586B700AF85EF /* MainViewController.h */,
+				F016A05C15D586B700AF85EF /* MainViewController.m */,
+				F016A05D15D586B700AF85EF /* MainViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F044CF1B15D875F1005D6C7E /* NTTableViewArrayUpdateManager */ = {
+			isa = PBXGroup;
+			children = (
+				F044CF1D15D875F1005D6C7E /* NTTableViewArrayUpdateManager.h */,
+				F044CF1E15D875F1005D6C7E /* NTTableViewArrayUpdateManager.m */,
+				F044CF1F15D875F1005D6C7E /* README.md */,
+			);
+			path = NTTableViewArrayUpdateManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F016A04E15D5860100AF85EF /* InfoPlist.strings in Resources */,
+				F016A05F15D586B700AF85EF /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +186,8 @@
 			files = (
 				F016A05015D5860100AF85EF /* main.m in Sources */,
 				F016A05415D5860100AF85EF /* AppDelegate.m in Sources */,
+				F016A05E15D586B700AF85EF /* MainViewController.m in Sources */,
+				F044CF2115D875F1005D6C7E /* NTTableViewArrayUpdateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +295,7 @@
 				F016A05915D5860100AF85EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

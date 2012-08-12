@@ -1,0 +1,3 @@
+[submodule "NTTableViewArraySample/NTTableViewArrayUpdateManager"]
+	path = NTTableViewArraySample/NTTableViewArrayUpdateManager
+	url = https://github.com/NagelTech/NTTableViewArrayUpdateManager.git
